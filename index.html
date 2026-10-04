@@ -1,84 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+  <html lang="pt-br">
+  <head>
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GFIG - Grupo de Foguetes</title>
+  </head>
+  <body>
 
-<head>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GFIG</title>
-</head>
+      <!-- Header com menu de navegação -->
+      <header class="header">
+          <nav>
+              <ul class="menu">
+                  <li><a href="index.html#inicio">Início</a></li>
+                  <li><a href="index.html#sobre">Quem Somos</a></li>
+                  <li><a href="projetos.html">Nossos Foguetes</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+              </ul>
+          </nav>
+      </header>
 
-<body>
+      <main class="tela">
 
-    <!-- 1. Ponto de referência fixo no topo real da página -->
-    <div id="topo"></div>
+          <!-- Seção 1: Início / Home -->
+          <section class="container1" id="inicio">
+              <img class="background" src="gifinho.gif" alt="Background Espacial">
 
-    <div class="header">
-        <nav">
-        <ul class="menu">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Quem Somos</a></li>
-            <li><a href="#foguetes">Nossos Foguetes</a></li>
-            <li><a href="#conquistas">Conquistas</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-    </div>
+              <div class="logo" id="logoCard">
+                  <img src="02_emblema-removebg-preview.png" alt="Logo GFIG">
+              </div>
 
-    <div class="tela">
+              <div class="conteudo-texto">
+                  <p class="um">GFIG => Projetando o <span>futuro</span> da engenharia <br>aeroespacial a partir de
+  <span>Gaspar</span>.</p>
+                  <p class="dois">Transformamos ciência em tecnologia aeroespacial de alto impacto.</p>
 
-        <div class="container1">
-            <img class="background" src="gifinho.gif" alt="Background">
+                  <div class="botoes-grupo">
+                      <a href="projetos.html" class="btn-inicio">Conhecer Projetos</a>
+                      <a href="#sobre" class="btn-inicio btn-secundario">Ver Vídeo Oficial</a>
+                  </div>
+              </div>
+          </section>
 
-            <div class="logo" id="logoCard">
-                <img src="02_emblema-removebg-preview.png" alt="Logo">
-            </div>
+          <!-- Seção 2: Equipe (Agora preparada para o CSS Grid) -->
+          <section class="container2" id="sobre">
+              <h2 class="equipe">Equipe</h2>
 
-            <div class="conteudo-texto">
-                <p class="um">GFIG=> Projetando o <span>futuro</span> da engenharia <br>aeroespacial a partir de <span>Gaspar</span>.</p>
-                <p class="dois">Transformamos ciência em tecnologia aeroespacial de alto impacto.</p>
+              <div class="equipe-grid">
+                  <div class="membro">
+                      <img src="03_camiseta.png" alt="Romulo" class="integrantes">
+                      <p>Romulo</p>
+                  </div>
 
-                <div class="botoes-grupo">
-                    <a href="#foguetes" class="btn-inicio">Conhecer Projetos</a>
-                    <a href="#sobre" class="btn-inicio btn-secundario">Ver Vídeo Oficial</a>
-                </div>
-            </div>
-        </div>
+                  <div class="membro">
+                      <img src="03_camiseta.png" alt="Henrique" class="integrantes">
+                      <p>Henrique</p>
+                  </div>
 
-        <div class="container2" id="container2">
-            <h2 class="equipe">Equipe.</h2>
-            <ul class="equipe-lista">
-                <li>
-                    <p>Romulo. O gatao</p>
-                    <img class="integrantes" src="03_camiseta.png" alt="Romulo">
-                </li>
+                  <div class="membro">
+                      <img src="03_camiseta.png" alt="Sarah" class="integrantes">
+                      <p>Sarah</p>
+                  </div>
 
-                <li>
-                    <p>Henrrique. O q namora a Joana</p>
-                    <img class="integrantes" src="03_camiseta.png" alt="Henrique">
-                </li>
+                  <div class="membro">
+                      <img src="03_camiseta.png" alt="Mauricio" class="integrantes">
+                      <p>Mauricio</p>
+                  </div>
 
-                <li>
-                    <p>Sarah. A enjoada</p>
-                    <img class="integrantes" src="03_camiseta.png" alt="Sarah">
-                </li>
+                  <div class="membro">
+                      <img src="03_camiseta.png" alt="Rauta" class="integrantes">
+                      <p>Rauta</p>
+                  </div>
+              </div>
+          </section>
 
-                <li>
-                    <p></p>Mauricio. MauMau</p>
-                    <img class="integrantes" src="03_camiseta.png" alt="Mauricio">
-                </li>
+      </main>
 
-                <li>
-                    <p>Rauta. O cara da Receita Federal</p>
-                    <img class="integrantes" src="03_camiseta.png" alt="Rauta">
-                </li>
-            </ul>
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+      <script src="script.js"></script>
+  </body>
+  </html>
