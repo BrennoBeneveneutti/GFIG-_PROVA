@@ -36,6 +36,12 @@ body {
     z-index: 1000;
     text-decoration: none;
 }
+.menu{
+    display: flex;       /* Transforma a lista em linha */
+    list-style: none;    /* Remove as bolinhas da lista */
+    padding: 0;          /* Remove o espaçamento padrão da lista */
+    gap: 20px; 
+}
 
 h2 {
     color: rgb(255, 255, 255);
@@ -45,8 +51,46 @@ h2 {
 a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 23px;
     transition: color 0.3s ease;
+}
+.botoes-grupo {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Dá um espaço de separação entre os dois botões */
+    margin-top: 30px;
+}
+
+.btn-inicio {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #145EFF; /* Cor azul de destaque */
+    border-radius: 8px;
+    text-decoration: none;
+    
+    /* CRITÉRIO: Transição suave ao passar o mouse */
+    transition: all 0.3s ease; 
+}
+
+/* Efeito de hover (passar o mouse) no botão */
+.btn-inicio:hover {
+    background-color: white;
+    color: #145EFF;
+    transform: translateY(-3px); /* Faz o botão subir de leve, dando efeito dinâmico */
+}
+
+/* Estilo do segundo botão (transparente com borda) */
+.btn-inicio.btn-secundario {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.btn-inicio.btn-secundario:hover {
+    background-color: white;
+    color: rgb(7, 3, 27);
 }
 
 .container1 {
@@ -73,14 +117,14 @@ a {
 .logo {
     position: absolute;
     top: 20px;
-    right: -140px;
+    right: -100px;
     z-index: 20;
     perspective: 1000px;
 }
 
 .logo img {
-    height: 320px;
-    width: 320px;
+    height: 220px;
+    width: 220px;
     transition: transform 0.1s ease-out;
 }
 
